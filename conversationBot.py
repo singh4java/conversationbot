@@ -2,9 +2,13 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 import os
 from termcolor import colored
+import pyfiglet
 
 colors = {'G': 'grey', 'R': 'red', 'GR': 'green', 'Y': 'yellow', 'B': 'blue', 'M': 'magenta', 'C': 'cyan', 'W': 'white'}
 
+
+result = pyfiglet.figlet_format("Con-Bot-AI", font = "digital")
+print(colored(result,color='green'))
 print('------Color List-------')
 print(colors)
 x = input('Select bot response color from  color  list ')
